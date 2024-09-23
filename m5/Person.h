@@ -1,0 +1,17 @@
+#pragma once
+#include <string>
+
+class Person
+{
+private:
+    std::string firstname;
+    std::string lastname;
+    int rnd_num;
+
+public:
+    Person();
+    ~Person();
+    Person(std::string first, std::string last);
+    Person(std::string first, std::string last, int arb);
+    std::string getName() const;
+};
